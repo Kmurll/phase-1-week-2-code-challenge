@@ -10,9 +10,9 @@ Flataculties App is a simple web application that allows users to view a list of
 
 # Technology Used
 
-    HTML
-    CSS
-    JavaScript
+HTML
+CSS
+JavaScript
 
 # Project Setup
 
@@ -26,9 +26,9 @@ npm install -g json-server
 Start the JSON server:
 json-server --host 127.0.0.1 -p 4000 db.json
 
-    Make sure the server is running and the animal data is accessible at http://127.0.0.1:4000/characters.
+Make sure the server is running and the animal data is accessible at http://127.0.0.1:4000/characters.
 
-    Open the index.html file in your web browser to access the application.
+Open the index.html file in your web browser to access the application.
 
 # License
 
