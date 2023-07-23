@@ -19,7 +19,7 @@ Together, these technologies enable the creation of a functional and visually ap
 # Project Setup
 
 Clone the repository:
-git clone git@github.com:KMurll/phase-1-week-2-code-challenge.git
+git clone git@github.com:Kmurll/phase-1-week-2-code-challenge.git
 Open the db.json file and make sure it contains the data for the animals.
     
 Install the required dependencies using npm:
