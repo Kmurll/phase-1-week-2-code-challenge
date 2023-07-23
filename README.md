@@ -10,9 +10,11 @@ Flataculties App is a simple web application that allows users to view a list of
 
 # Technology Used
 
-HTML
-CSS
-JavaScript
+HTML: Defines the structure of the web page
+CSS: Styles the presentation and layout
+JavaScript: Adds interactivity and dynamic behavior
+JSON Server:  Simulates a backend API to provide data for the application
+Together, these technologies enable the creation of a functional and visually appealing web application like Flataculties App.
 
 # Project Setup
 
