@@ -1,4 +1,4 @@
-# phase-1-week-2-code-challenge Flataculties App
+# phase-1-week-2-code-challenge Flatacuties App
 
 # Description
 
