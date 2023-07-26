@@ -8,7 +8,7 @@ const animalListElement = document.getElementById('animalList')
 const animalDetailsElement = document.getElementById('animalDetails')
 
 // Create an empty array to store the animal data fetched from the API
-let animalData = [];
+let animalData = []
 
 // Function to fetch the list of animals and display them in the HTML
 async function displayAnimalList() {
@@ -34,14 +34,14 @@ async function displayAnimalList() {
       listItem.innerHTML = `
         <span>${animal.name}</span>
         <img src="${animal.image}" alt="${animal.name}" width="40" height="40">
-      `;
+      `
 
       // Add a click event listener to the list item to show the animal details when clicked
       listItem.addEventListener('click', () => displayAnimalDetails(animal.id))
 
       // Append the list item to the "animalList" element in the HTML
       animalListElement.appendChild(listItem)
-    });
+    })
   } catch (error) {
     // If there is an error fetching the data, log the error to the console
     console.error('Error fetching animal list:', error)
@@ -60,7 +60,7 @@ function displayAnimalDetails(animalId) {
       <img src="${selectedAnimal.image}" alt="${selectedAnimal.name}" width="200">
       <p>Votes: ${selectedAnimal.votes}</p>
       <button onclick="addVote(${selectedAnimal.id})">Add Vote</button>
-    `;
+    `
   }
 }
 
