@@ -1,60 +1,80 @@
+/* Reset default margin and padding for body and list */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and text color for the body */
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the h1 heading and add some margin */
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #animalList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .animal-item {
-    cursor:grab;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .animal-item img {
-    margin-right: 10px;
-  }
-  
-  .animal-item:hover {
-    background-color: #f2f2f2;
-  }
-  
-  #animalDetails {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  #animalDetails h2 {
-    margin-top: 0;
-  }
-  
-  #animalDetails img {
-    display: block;
-    margin: 10px auto;
-  }
-  
-  #animalDetails p {
-    margin: 10px 0;
-  }
-  
-  #animalDetails button {
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Style the animal list */
+#animalList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Style each list item (animal) */
+#animalList li {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect for list items */
+#animalList li:hover {
+  transform: scale(1.05);
+}
+
+/* Style the animal details container */
+#animalDetails {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for the animal details container */
+#animalDetails h2 {
+  margin-top: 0;
+}
+
+#animalDetails p {
+  line-height: 1.5;
+}
+
+/* Hide the animal details container by default */
+#animalDetails {
+  display: none;
+}
+
+/* Show the animal details container when it has content */
+#animalDetails:has(h2) {
+  display: block;
+}
+
   
